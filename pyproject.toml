@@ -1,0 +1,11 @@
+[tool.pyright]
+exclude = ["**/node_modules",
+    "**/__pycache__",
+    ".venv"
+]
+venvPath = "."
+venv = ".venv"
+
+[tool.ruff]
+select = ["E", "F", "I"]
+per-file-ignores = {"__init__.py" = ["F401"]}
